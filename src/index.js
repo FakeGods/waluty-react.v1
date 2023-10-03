@@ -1,11 +1,11 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
 import CurrencyConverter from "./components/CurrencyConverter.jsx";
 import "./App.css";
 
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
   <React.StrictMode>
     <CurrencyConverter />
   </React.StrictMode>,
-  document.getElementById("root")
 );
