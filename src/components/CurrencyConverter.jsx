@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import CurrencyForm from "./CurrencyForm/CurrencyForm";
 import Loader from "./Loader/Loader";
 import Result from "./Result/Result";
-import fetchCurrency from "./Api/Api";
+import fetchCurrency from "./api/api";
 
 function CurrencyConverter() {
   const [selectedCurrency, setSelectedCurrency] = useState("EUR");
